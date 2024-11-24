@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-
+@use '@angular/material' as mat;
+// @import url('fonts/IranYekan/IranYekan.css');
+*{
+  font-family: IRANYekan, Roboto, "Helvetica Neue", sans-serif !important;
+}
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: IRANYekan, Roboto, "Helvetica Neue", sans-serif !important; }
+// @include mat.theme-overrides((
+//   primary: #ebdcff,
+//   on-primary: #230f46,
+//   body-medium: 500 1.15rem/1.3rem Arial,
+//   corner-large: 32px,
+//   level3: 0 4px 6px 1px var(--mat-sys-surface-dim),
+// ));
+
+:root{
+  --mat-toolbar-container-background-color: var(--mat-sys-primary-container);
+  --mat-sidenav-container-divider-color:var(--mat-sys-primary)
+}

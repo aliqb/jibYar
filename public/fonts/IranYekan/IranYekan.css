@@ -1,0 +1,35 @@
+﻿@font-face {
+	font-family: IRANYekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../IranYekan/eot/iranyekanwebregular(fanum).eot");
+	/* IE9 Compat Modes */
+	src: url('../IranYekan/eot/iranyekanwebregular(fanum).eot?#iefix') format('embedded-opentype'),
+	  /* IE6-IE8 */
+	  url('../IranYekan/woff2/iranyekanwebregular(fanum).woff2') format('woff2'),
+	  /* Super Modern Browsers */
+	  url('../IranYekan/woff/iranyekanwebregular(fanum).woff') format('woff'),
+	  /* Pretty Modern Browsers */
+	  url('../IranYekan/ttf/iranyekanwebregular(fanum).ttf') format('truetype'),
+	  /* Safari, Android, iOS */
+	  url('../IranYekan/svg/iranyekanwebregular(fanum).svg') format('svg');
+	/* Legacy iOS */
+  }
+
+  @font-face {
+	font-family: IRANYekan;
+	font-style: bold;
+	font-weight: bold;
+	src: url('../IranYekan/eot/iranyekanwebbold(fanum).eot');
+	/* IE9 Compat Modes */
+	src: url('../IranYekan/eot/iranyekanwebbold(fanum).eot?#iefix') format('embedded-opentype'),
+	  /* IE6-IE8 */
+	  url('../IranYekan/woff2/iranyekanwebbold(fanum).woff2') format('woff2'),
+	  /* Super Modern Browsers */
+	  url('../IranYekan/woff/iranyekanwebbold(fanum).woff') format('woff'),
+	  /* Pretty Modern Browsers */
+	  url('../IranYekan/ttf/iranyekanwebbold(fanum).ttf') format('truetype'),
+	  /* Safari, Android, iOS */
+	  url('../IranYekan/svg/iranyekanwebbold(fanum).svg') format('svg');
+	/* Legacy iOS */
+  }
