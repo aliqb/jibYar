@@ -1,0 +1,34 @@
+<div class="grid-container">
+  <h1 class="mat-h1">داشبورد</h1>
+  <mat-card class="dashboard-card">
+    <mat-card-header>
+      <mat-card-title>
+        مجموع
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="dashboard-card-content">
+      <div class="total-container">
+        <app-total-item [total]="30000000" title="همه دارایی‌ها"></app-total-item>
+        <app-total-item [total]="10000000" title="دارایی قابل برداشت"></app-total-item>
+        <app-total-item [total]="20000000" title="دارایی غیر قابل برداشت"></app-total-item>
+
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-grid-list cols="4"  gutterSize="1rem">
+    @for (card of cards | async; track card) {
+      <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{card.title}}
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div>Card Content Here</div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+</div>
