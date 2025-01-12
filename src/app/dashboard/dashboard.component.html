@@ -15,24 +15,6 @@
       </div>
     </mat-card-content>
   </mat-card>
-  <section>
-    <h2 class="section-title">حساب‌های قابل برداشت</h2>
-    <mat-grid-list cols="4"  gutterSize="1rem" rowHeight="200px">
-      @for (card of cards | async; track card) {
-        <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
-          <app-account-card [total]="5000000" title="بانک" description="lorem ispum dfsdfsdf sdfsdfsdf sdfsdfsf sdfsdff"></app-account-card>
-        </mat-grid-tile>
-      }
-    </mat-grid-list>
-  </section>
-  <section>
-    <h2 class="section-title">حساب‌های غیر قابل برداشت</h2>
-    <mat-grid-list cols="4"  gutterSize="1rem" rowHeight="200px">
-      @for (card of cards | async; track card) {
-        <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
-          <app-account-card [total]="5000000" title="بانک" description="lorem ispum dfsdfsdf sdfsdfsdf sdfsdfsf sdfsdff"></app-account-card>
-        </mat-grid-tile>
-      }
-    </mat-grid-list>
-  </section>
+  <app-accounts-grid [accounts]="accounts" title="حساب‌های قابل برداشت"></app-accounts-grid>
+  <app-accounts-grid [accounts]="accounts" title="حساب‌های غیر‌قابل برداشت"></app-accounts-grid>
 </div>

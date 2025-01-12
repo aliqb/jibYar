@@ -4,7 +4,10 @@
       <div class="icon-container">
         <img [src]="icon()" alt="bank account icon" >
       </div>
-      <mat-card-title [countUp]="total()" [reanimateOnClick]="false">0</mat-card-title>
+      <mat-card-title >
+        <span [countUp]="total()" [reanimateOnClick]="false">0</span>
+        <span class="currency">{{ currency() }}</span>
+      </mat-card-title>
       <mat-card-subtitle>{{ title() }}</mat-card-subtitle>
     </mat-card-title-group>
   </mat-card-header>

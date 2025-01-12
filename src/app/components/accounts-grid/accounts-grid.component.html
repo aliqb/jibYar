@@ -1,0 +1,10 @@
+<section>
+  <h2 class="section-title">حساب‌های غیر قابل برداشت</h2>
+  <mat-grid-list cols="4"  gutterSize="1rem" rowHeight="200px" cdkDropList cdkDropListOrientation="mixed" (cdkDropListDropped)="drop($event)">
+    @for (account of accounts() ; track account) {
+      <mat-grid-tile [colspan]="cols | async" [rowspan]="1" cdkDrag>
+        <app-account-card [total]="account.total" [title]="account.title" [description]="account.description" [icon]="account.icon"></app-account-card>
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+</section>
